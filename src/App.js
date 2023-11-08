@@ -1,5 +1,6 @@
 import { movies } from './movieDummy'; //data를 import해서 가져오기
 import Movie from './Components/Movie';
+import Details from './Components/Details';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
               title = {item.title}
               poster_path={item.poster_path}
               vote_average={item.vote_average}
+              overview={item.overview}
               />
             )
           })
