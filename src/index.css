@@ -1,8 +1,56 @@
-body {
-  background-color: #22254b;
+@import 'reset.css';
+
+.root-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.header-container {
+  background-color: rgba(3, 37, 65, 1);
 }
 
-.app-container {
+.header-wrap {
+  height: 64px;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.header-left-wrap {
+  display: flex;
+}
+
+.header-left-wrap ul {
+  display: flex;
+  margin-left: 16px;
+}
+
+.header-left-wrap li {
+  margin-right: 14px;
+  padding: 8px;
+}
+
+
+.header-nav-item {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.untitled-container img {
+  width: 100%;
+}
+
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.movies-container {
   display: flex;
   flex-wrap: wrap;
   /* 각각 아이템 사이즈를 줄여서 맞추는게 기본값인 nowrap */
@@ -15,7 +63,6 @@ body {
   color: white;
   border-radius: 5px;
   box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
-  position: relative;
 }
 
 .movie-container img {
@@ -35,12 +82,4 @@ body {
 
 .movie-info span {
   margin-left: 3px;
-}
-
-.detail-container {
-  position: absolute;
-}
-
-.detail-box {
-  background-color: rgba(0, 0, 0, 0.278);
 }
